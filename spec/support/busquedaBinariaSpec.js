@@ -74,4 +74,10 @@ describe('Pruebas de búsqueda binaria', () => {
 
     });
 
+    it('Debe retornar -1 si no recibe un arreglo válido', () => {
+
+     expect(busquedaBinaria(null, 5)).toBe(-1);
+
+     });
+
 });
