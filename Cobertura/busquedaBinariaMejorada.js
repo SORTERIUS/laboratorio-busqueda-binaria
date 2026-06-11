@@ -1,13 +1,5 @@
 function busquedaBinaria(arreglo, objetivo) {
 
-    if (!Array.isArray(arreglo)) {
-        return -1;
-    }
-
-    if (arreglo.length === 0) {
-        return -1;
-    }
-
     let izquierda = 0;
     let derecha = arreglo.length - 1;
 

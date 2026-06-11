@@ -34,4 +34,44 @@ describe('Pruebas de búsqueda binaria', () => {
 
     });
 
+    it('Debe retornar -1 en arreglo vacío', () => {
+
+        const arreglo = [];
+
+        expect(busquedaBinaria(arreglo, 5)).toBe(-1);
+
+    });
+
+    it('Debe encontrar elemento único', () => {
+
+        const arreglo = [10];
+
+        expect(busquedaBinaria(arreglo, 10)).toBe(0);
+
+    });
+
+    it('Debe retornar -1 si el único elemento no coincide', () => {
+
+        const arreglo = [10];
+
+        expect(busquedaBinaria(arreglo, 5)).toBe(-1);
+
+    });
+
+    it('Debe encontrar números negativos', () => {
+
+        const arreglo = [-10, -5, 0, 5, 10];
+
+        expect(busquedaBinaria(arreglo, -5)).toBe(1);
+
+    });
+
+    it('Debe encontrar elemento en lista grande', () => {
+
+        const arreglo = [1,2,3,4,5,6,7,8,9,10];
+
+        expect(busquedaBinaria(arreglo, 8)).toBe(7);
+
+    });
+
 });
